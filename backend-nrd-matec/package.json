@@ -1,0 +1,19 @@
+{
+  "name": "backend-nrd-matec",
+  "version": "2.0.0",
+  "description": "Backend MATEC NRD — Express + Supabase (PostgreSQL via pg)",
+  "main": "server.js",
+  "scripts": {
+    "dev":   "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "MATEC Ingeniería AYC",
+  "license": "ISC",
+  "dependencies": {
+    "cors":    "^2.8.6",
+    "dotenv":  "^16.4.5",
+    "express": "^5.2.1",
+    "pg":      "^8.12.0"
+  }
+}
