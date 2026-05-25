@@ -158,7 +158,7 @@ const ProjectFlowchart = ({ projectName, hardwareType, currentPhase, numFase, ac
   // Si agregas fases/subfases/transiciones en la BD y recargas la página,
   // el diagrama se actualiza automáticamente sin cambiar ningún archivo.
   useEffect(() => {
-    fetch(`http://${window.location.hostname}:3001/api/diagrama`)
+    fetch(`${import.meta.env.VITE_API_URL || `http://${window.location.hostname}:3001`}/api/diagrama`)
       .then(r => {
         if (r.status === 404) throw new Error(
           'Ruta /api/diagrama no encontrada. ' +

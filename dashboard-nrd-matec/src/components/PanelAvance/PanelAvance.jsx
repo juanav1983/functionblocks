@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
-const API = `http://${window.location.hostname}:3001`;
+const API = import.meta.env.VITE_API_URL || `http://${window.location.hostname}:3001`;
 
 // ── Colores por tipo de transición ────────────────────────────────────────────
 const TIPO_ESTILO = {

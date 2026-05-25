@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
-const API = `http://${window.location.hostname}:3001/api/admin`;
+const API = `${import.meta.env.VITE_API_URL || `http://${window.location.hostname}:3001`}/api/admin`;
 
 // ── Helpers de fetch ──────────────────────────────────────────────────────────
 const apiFetch = (url, opts = {}) =>

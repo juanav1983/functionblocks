@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-const API = `http://${window.location.hostname}:3001`;
+const API = import.meta.env.VITE_API_URL || `http://${window.location.hostname}:3001`;
 
 // ── Estilos por estado ────────────────────────────────────────────────────────
 const ESTADO = {

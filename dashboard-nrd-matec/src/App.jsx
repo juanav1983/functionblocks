@@ -7,7 +7,7 @@ import ProyectosDashboard from './pages/ProyectosDashboard';
 
 // Usa el mismo hostname desde el que se cargó la app
 // → funciona desde localhost Y desde cualquier dispositivo en la misma red
-const API = `http://${window.location.hostname}:3001`;
+const API = import.meta.env.VITE_API_URL || `http://${window.location.hostname}:3001`;
 
 // ── Badge visual para el estado del proyecto ─────────────────────────────────
 const EstadoBadge = ({ estado }) => {
